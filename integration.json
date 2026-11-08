@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "29d03802722d6cc20351512ddab0c1e5ff31f013241d861e1b7e212fcac6fa2c",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://abm.dev/openapi.json"
-  ],
   "id": "abmdev-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "ABM.dev MCP setup and connection checker",
-  "description": "Generate ABM.dev MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare ABM.dev for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-abmdev-mcp",
+  "sourceRevision": "11188222f761f2ba21fdb702536172ab277e0d7f07a200cd551476da6fe910f5",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://abm.dev/openapi.json"
+  ],
+  "utility": {
+    "problem": "Prepare ABM.dev and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "abmdev",
   "appName": "ABM.dev",
-  "providerDocs": "https://abm.dev/openapi.json",
-  "providerWebsite": "https://abm.dev/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://abm.dev/docs/getting-started",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-abmdev-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

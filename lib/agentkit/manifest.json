@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-abmdev",
+      "description": "Connect AI agents to ABM.dev using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-abmdev/SKILL.md": "f9c92cba95c16e218ed6439ef22a17e7fca9dd43858d47756988685bbbbe353e"
+  }
+}
