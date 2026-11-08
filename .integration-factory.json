@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "29d03802722d6cc20351512ddab0c1e5ff31f013241d861e1b7e212fcac6fa2c",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://abm.dev/openapi.json"
+  ],
+  "id": "abmdev-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "ABM.dev MCP setup and connection checker",
+  "description": "Generate ABM.dev MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "abmdev",
+  "appName": "ABM.dev",
+  "providerDocs": "https://abm.dev/openapi.json",
+  "providerWebsite": "https://abm.dev/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://abm.dev/docs/getting-started",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-abmdev-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
